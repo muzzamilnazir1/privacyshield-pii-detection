@@ -149,36 +149,6 @@ torch, transformers, datasets, accelerate, scikit-learn,
 pandas, numpy, matplotlib, sentencepiece, protobuf
 ```
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- A Kaggle account (phone verified, to use the free GPU)
-- Joined the [competition](https://www.kaggle.com/competitions/pii-detection-removal-from-educational-data) (needed to use the data)
-
-### Run it on Kaggle
-
-1. Open the competition page, click **Code → New Notebook**
-2. Set **Settings → Accelerator** to a GPU
-3. Upload `notebooks/privacyshield_pii_detection.ipynb` to the notebook (**File → Import Notebook**)
-4. Click **Run All**. Training takes about 10 minutes.
-
-The notebook reads the data from `/kaggle/input/competitions/pii-detection-removal-from-educational-data/train.json`. If that path fails, list the files with `os.walk("/kaggle/input")` and update the path.
-
-### Run it locally (optional)
-
-```
-git clone https://github.com/muzzamilnazir1/privacyshield-pii-detection.git
-cd privacyshield-pii-detection
-pip install -r requirements.txt
-```
-
-Download `train.json` from the competition page and change the data path in the notebook. A GPU is strongly recommended.
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -207,7 +177,5 @@ privacyshield-pii-detection/
 
 ## 🙏 Credits
 
-- Competition and dataset: [The Learning Agency Lab - PII Data Detection](https://www.kaggle.com/competitions/pii-detection-removal-from-educational-data) on Kaggle
-- Reference (1st place solution): [bogoconic1/pii-detection-1st-place](https://github.com/bogoconic1/pii-detection-1st-place)
-- Beginner starter notebook: [awsaf49/pii-data-detection](https://github.com/awsaf49/pii-data-detection)
+- Competition and dataset: [The Learning Agency Lab - PII Data Detection](https://www.kaggle.com/competitions/pii-detection-removal-from-educational-data) on 
 - Model: [microsoft/deberta-v3-small](https://huggingface.co/microsoft/deberta-v3-small)
